@@ -1,0 +1,92 @@
+.app-header {
+	padding: 1rem 3rem;
+	max-height: 100px;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	max-width: 1200px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app-logo {
+	height: 150px;
+}
+
+.app-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item-nav {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-nav img {
+	width: 35px;
+}
+
+.item-nav p {
+	color: rgb(23, 22, 53);
+	margin: 5px;
+}
+
+a {
+	position: relative;
+	display: block;
+	font-size: 1.2rem;
+	transition: color 0.1s, background-color 0.1s;
+	font-weight: 600;
+	text-decoration: none;
+	opacity: 0.3;
+	text-transform: capitalize;
+}
+
+a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 95%;
+	height: 3px;
+	width: 90%;
+	background-color: rgb(23, 22, 53);
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+	transition: color 0.1s, transform 0.2s ease-out,
+		-webkit-transform 0.2s ease-out;
+}
+
+a:hover::before {
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+
+a:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.active:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 95%;
+	height: 3px;
+	width: 90%;
+	background-color: rgb(23, 22, 53);
+}
+
+.active {
+	opacity: 1;
+}
