@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../Styles/LoadingStyle.css';
+import { colors } from '../Constants/Styles';
 
 const SIZES = {
 	big: '256px',
@@ -44,18 +45,15 @@ function Loader({ size = 'default', strokeWidth }) {
 				height={height}
 				viewBox={'0 0 200 200'}
 				xmlSpace="preserve"
-				x="0px"
-				y="0px"
 			>
 				<g>
 					<path
 						fill="none"
-						stroke="#E51CB5"
+						stroke={colors.blue}
 						strokeWidth={strokeWidth}
 						strokeMiterlimit="10"
 						d="M138.768,100c0,21.411-17.356,38.768-38.768,38.768
 		        c-21.411,0-38.768-17.356-38.768-38.768c0-21.411,17.357-38.768,38.768-38.768"
-						dur="8s"
 					/>
 					<animateTransform
 						attributeType="xml"
@@ -63,13 +61,14 @@ function Loader({ size = 'default', strokeWidth }) {
 						type="rotate"
 						from="0 100 100"
 						to="360 100 100"
+						dur="8s"
 						repeatCount="indefinite"
 					/>
 				</g>
 				<g>
 					<path
 						fill="none"
-						stroke="#C813E2"
+						stroke={colors.blue}
 						strokeWidth={strokeWidth}
 						strokeMiterlimit="10"
 						d="M132.605,100c0,18.008-14.598,32.605-32.605,32.605
@@ -88,7 +87,7 @@ function Loader({ size = 'default', strokeWidth }) {
 				<g>
 					<path
 						fill="none"
-						stroke="#9E31F4"
+						stroke={colors.blue}
 						strokeWidth={strokeWidth}
 						strokeMiterlimit="10"
 						d="M126.502,100c0,14.638-11.864,26.502-26.502,26.502
