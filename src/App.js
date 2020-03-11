@@ -53,6 +53,7 @@ function App() {
 			)
 		);
 	}
+
 	const dispatch = useCallback(fetchData, []);
 
 	useEffect(() => {
