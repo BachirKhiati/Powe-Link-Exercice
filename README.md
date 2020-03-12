@@ -12,7 +12,7 @@
         - Graph data is used for both the visualisation and calcualting power links.
         - Cover 3 cases for the links:
             * case 1: one station with higher power value.
-            * case 2 : 2 stations with the same power value and not equaal zero.
+            * case 2 : 2 stations with the same power value and not equal zero.
             * case 3 : no links found,
         - Responsive UI :
             * Graph resize based on the current width with min-max value pre-defined.
